@@ -1,6 +1,6 @@
 # guia-gourmet-tsi
 
-03.11.2024 https://www.figma.com/design/t4wIgsCYjsPvq3HCujPe9u/guiaMichelinTSI-Framework%26CSS?node-id=1-2&node-type=canvas&t=V6og5iM8kESisWIw-0
+https://www.figma.com/design/xqPYAm6IGPwK4xNlNLIw3R/GourmetGuide-TSI?node-id=1-2&p=f&t=GSGbDLSqbGxZztTd-0
 
 
 RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
