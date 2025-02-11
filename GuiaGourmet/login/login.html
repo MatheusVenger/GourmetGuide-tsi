@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Login</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="/mainpage/main.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <style>
+       body{
+         background-color: #f0f0f0;
+       }
+     
+       .progress{
+         width:50%;
+         margin:0 auto;
+         margin-top:20%;
+       }
+       
+       @media only screen and (max-width:924px){
+            .progress{
+               width:70%;
+               margin:0 auto;
+               margin-top:60%;
+             }
+       }
+    
+     </style>
+  </head>
+  
+  <body>
+    
+    <!-- espaçamento -->
+ <section class="espaco">
+    <div class="row container">
+        <div class="col s12">
+            <h3> </h3>
+        </div>
+    </div>
+ </section>
+ <!-- espaçamento -->
+ <section class="espaco">
+    <div class="row container">
+        <div class="col s12">
+            <h3> </h3>
+        </div>
+    </div>
+ </section>
+ 
+  
+ 
+ <!-- cadastro -->
+    <section class="cadatro">
+     <div id="flayer">
+          <div id="slayer">
+    
+    <div class="container" id="content">
+        
+       
+        <div class="row">
+          <div class="col l3 m3 s12"></div>
+          <div class="col l6 m6 s12">
+            <form action="" method="POST">
+                 <div class="card-panel z-depth-5">
+                  <h5 class="center">Cadastre-se</h5>
+                  <p class="center">Conheça os melhores do Mundo!</p>
+                   <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" name="username">
+                    <label>Enter username</label>
+                  </div>
+                  
+                   <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="email" class="validate">
+                    <label>Enter email</label>
+                  </div>
+                  
+                   <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" name="pass1">
+                    <label>Enter password</label>
+                  </div>
+                  
+                    
+                   <div class="input-field">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input type="password" name="pass2">
+                    <label>Confirm password</label>
+                  </div>
+                  <p class="right">Já possui uma conta? <a href="#login" class="modal-trigger">login</a></p>
+                  <a href="/mainpage/main.html" value="Cadastre-se" class="btn left col s12 red darken-4">Cadastre-se</a>
+                
+                  <div class="clearfix"></div>
+               </div>
+            </form>
+            
+          </div>
+            <div class="col l3 m3 s12"></div>
+      
+          
+          
+            </div>
+        </div>
+     </div>
+ </div>
+</section>
+      
+          <!-- login -->
+    <section class="login">
+        <div class="modal modal-fixed-footer" id="login">
+            <form action="" method="POST">
+             <div class="modal-conent">
+              <div class="container">
+                    <h5 class="center">Login</h5>
+                  <p class="center">Bem vindo de volta!</p>
+                  <div class="row">
+                  
+                    <div class="col m12 s12">
+                      <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" name="username">
+                    <label>Enter username/email</label>
+                  </div>
+                  
+                  <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" name="pass1">
+                    <label>Enter password</label>
+                  </div>
+                  <p>
+                    <label>
+                      <input type="checkbox">
+                      <span>Remember me</span>
+                    </label>
+                  </p>
+                    </div>
+                    
+                  </div>
+              </div>
+            </div>
+            
+            <div class="modal-footer">
+                  <div class="container">
+                
+                      
+                         <p class="left">Novo aqui? <a href="/login/login.html" class="modal-trigger">Cadastre-se</a></p>
+                         <a href="/mainpage/main.html" class="btn pulse grey lighten-4 black-text"> Login</a>
+                          <input type="button"  value="close" class="btn modal-close red darken-4">
+                      </div>
+     
+               
+                 
+                  </div>
+            </div>
+         </form>
+      </div>
+</section>
+    
+    
+    <section class="js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script>
+    
+      const login = document.querySelectorAll(".modal");
+      M.Modal.init(login,{
+        opacity:0.7,
+        dismissible:false
+      });
+      
+      document.querySelector("#content").style.display="none";
+      document.querySelector("#flayer").classList.add("progress");
+      document.querySelector("#slayer").classList.add("indeterminate");
+      
+      setTimeout(function(){
+          document.querySelector("#flayer").classList.remove("progress");
+          document.querySelector("#slayer").classList.remove("indeterminate");
+          document.querySelector("#content").style.display="block";
+      },3000)
+    </script>
+</section>  
+
+
+
+
+</body>
+</html>
