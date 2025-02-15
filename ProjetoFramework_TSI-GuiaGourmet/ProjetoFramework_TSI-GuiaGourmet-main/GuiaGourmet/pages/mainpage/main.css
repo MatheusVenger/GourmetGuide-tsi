@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'mixins';
+@import 'forms';
+@import 'buttons';
+
+/* Cores */
+.dark-blue-bg {
+    background-color: #1C1C44;
+  }
+
+  .dark-red-bg {
+    background-color: #A91D2B;
+  }
+  
+  .dark-red {
+    color: #A91D2B;
+  }
+
+  
+
+  /* Título dos cards de informações gerais */
+h3 {
+  font-size: clamp(2rem, 2vw, 2.6rem); 
+}
+
+/* Título dos cards */
+.card-image .card-title {
+  font-size: clamp(1.2rem, 2.5vw, 3rem); 
+}
+
+  /* Responsividade logo */
+.logo {
+    max-width: 12.5rem;
+    height: auto;
+  }
+  
+  .small-logo {
+    max-width: 3.125rem;
+    height: auto;
+    margin-right: 0.625rem;
+    vertical-align: middle;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #F0F0F0;
+    padding: 3.125rem 0;
+  }
+  
+  .slogan {
+    color: #1C1C44;
+    font-size: 2.5em;
+    margin-top: 1.25rem;
+  }
+  
+  .slogan-description {
+    color: #A91D2B;
+    font-size: 1.2em;
+    margin-top: 0.625rem;
+  }
+
+  .small-text {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .gallery-section .image-card {
+      display: none;
+    }
+    
+    /* Exibe apenas o card ativo */
+    .gallery-section .image-card.active {
+      display: block;
+    }
+  }
+
+
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+</head>
+<body>
+    <h2>Lista de Cadastros</h2>
+<button id="showRegistrations">Mostrar Cadastros</button>
+<table border="1" id="registrationTable" style="display: none;">
+  <tr>
+    <th>Email</th>
+    <th>Password</th>
+  </tr>
+</table>
+
+<script>
+  document.getElementById('showRegistrations').addEventListener('click', function() {
+    const userData = localStorage.getItem('userData');
+    const table = document.getElementById('registrationTable');
+    table.style.display = 'none'; 
+
+    if (userData) {
+      const user = JSON.parse(userData);
+      table.style.display = 'block'; 
+      const row = table.insertRow();
+      row.insertCell(0).textContent = user.email;
+      row.insertCell(1).textContent = user.password; 
+    } else {
+      alert('Nenhum cadastro encontrado!');
+    }
+  });
+</script>
+</body>
+</html>
